@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">awwong1 HoloNote</string>
+    <string name="save">Commit</string>
+    <string name="clear">Refresh</string>
+    <string name="delete">Delete</string>
+    <string name="subject">Subject</string>
+    <string name="content">Content</string>
+    <string name="datetime">DateTime</string>
+    <string name="title_activity_cloud">CloudActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="histogram_stats">Histogram/Stats</string>
+
+</resources>

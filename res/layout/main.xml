@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/oldNotesList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/datetime"
+        android:scrollbars="vertical" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/noteNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/datetime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/datetime"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp" >
+    </TextView>
+    
+    <EditText
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/subject"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/noteNum"
+        android:ems="10"
+        android:hint="@string/datetime"
+        android:singleLine="true" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/body"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/subject"
+        android:inputType="text" >        <requestFocus />
+    </EditText>    
+    
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/save"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/content"
+        android:inputType="text|textMultiLine"
+        android:scrollbars="horizontal"
+        android:singleLine="false" >
+    </EditText>    
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/clear" >
+    </Button>        
+    
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/clear"
+        android:text="@string/save" >
+    </Button>
+
+</RelativeLayout>
